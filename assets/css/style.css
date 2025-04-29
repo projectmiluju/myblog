@@ -1,0 +1,43 @@
+/* 기본 다크 모드 스타일 */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: #90caf9;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  border-bottom: 1px solid #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#toggle-theme {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* 라이트 모드 */
+body.light-mode {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+body.light-mode a {
+  color: #0366d6;
+}
