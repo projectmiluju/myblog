@@ -1,0 +1,6 @@
+title: "Miluju Blog"
+description: "TIL · 기술 및 CS 정리 · 책 요약"
+baseurl: ""
+url: "http://localhost:4000"
+markdown: kramdown
+theme: null

@@ -1,8 +1,20 @@
+.idea
+
+# Jekyll 생성 폴더
 _site/
 .sass-cache/
-.jekyll-metadata
-.DS_Store
-.bundle/
-vendor/
-.idea/
 .jekyll-cache/
+.jekyll-metadata
+
+# Ruby 관련
+vendor/
+.bundle/
+Gemfile.lock
+
+# 시스템 관련 (Mac 등)
+.DS_Store
+
+# 환경 설정
+.env
+*.swp
+*.log
