@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>카테고리: {{ page.category }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<header>
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <p>{{ site.description }}</p>
+</header>
+
+<main>
+  <h2>📂 {{ page.category }} 글 목록</h2>
+
+  {% assign category_name = page.category %}
+  {% if site.categories[category_name] %}
+  <ul>
+    {% for post in site.categories[category_name] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>이 카테고리에 해당하는 글이 없습니다.</p>
+  {% endif %}
+</main>
+</body>
+</html>
